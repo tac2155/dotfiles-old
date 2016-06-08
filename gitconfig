@@ -6,7 +6,7 @@
 [core]
  editor = vim
 	autocrlf = input
-	exludesfile = ~/.gitingore_global
+	excludesfile = ~/.gitingore_global
 
 # color stuff
 [color]
