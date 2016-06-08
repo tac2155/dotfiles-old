@@ -55,6 +55,9 @@ alias lsa='ls -Glpa'
 alias lsn='command ls'
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
+# quick change directory
+alias ..='cd ..'
+
 # make cp recursive by default
 alias cp='cp -R'
 alias cpn='command cp'
