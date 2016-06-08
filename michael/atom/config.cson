@@ -1,0 +1,95 @@
+"*":
+  Ensime:
+    sbtExec: "/usr/local/bin/sbt"
+  "atom-beautify":
+    general:
+      _analyticsUserId: "a754f3d6-a1d0-4ab6-bd12-f80ba9b92fef"
+  "atom-material-ui":
+    colors:
+      abaseColor:
+        red: 96
+        green: 125
+        blue: 139
+        alpha: 1
+      predefinedColor: "Blue Grey"
+    tabs:
+      compactTabs: true
+      tintedTabBar: true
+    treeView:
+      blendTabs: true
+      compactList: true
+    ui:
+      panelContrast: true
+      panelShadows: true
+  "autocomplete-plus":
+    confirmCompletion: "tab"
+    defaultProvider: "Fuzzy"
+    enableAutoConfirmSingleSuggestion: false
+  "browser-plus": {}
+  core:
+    allowPendingPaneItems: false
+    destroyEmptyPanes: true
+    disabledPackages: [
+      "vim-mode"
+      "ex-mode"
+      "Ensime"
+    ]
+    themes: [
+      "atom-material-ui"
+      "atom-material-syntax"
+    ]
+  editor:
+    fontSize: 13
+    invisibles: {}
+    lineHeight: 1.4
+    preferredLineLength: 100
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+  "exception-reporting":
+    userId: "2140a0ca-7024-e98e-2e3a-93ba7bc3d13b"
+  "flex-tool-bar":
+    showConfigButton: false
+    toolBarConfigurationFilePath: "/Users/mc/.atom/toolbar.cson"
+  "git-diff":
+    showIconsInEditorGutter: true
+  "language-babel":
+    disableWhenNoBabelrcFileInPath: true
+    transpileOnSave: false
+  linter:
+    lintOnChangeInterval: 2000
+    showErrorInline: false
+    showInfoMessages: true
+    statusBar: "Show error of the selected line"
+  "linter-eslint":
+    disableWhenNoEslintrcFileInPath: true
+  "linter-jscs":
+    messageType: "warning"
+    verbose: true
+  "linter-jshint": {}
+  "markdown-preview": {}
+  metrics:
+    userId: "488f901c412cb5de43fde1d3a75b0c6a6f12b3d1"
+  minimap:
+    plugins:
+      cursorline: true
+      cursorlineDecorationsZIndex: 0
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+  "one-light-ui":
+    layoutMode: "Compact"
+  "release-notes":
+    viewedVersion: "0.95.0"
+  "tool-bar":
+    iconSize: "16px"
+    position: "Left"
+  "tree-view":
+    squashDirectoryNames: true
+  welcome:
+    showOnStartup: false
+".babel.regexp.source":
+  editor:
+    preferredLineLength: 100
+".js.jsx.source":
+  editor:
+    preferredLineLength: 100

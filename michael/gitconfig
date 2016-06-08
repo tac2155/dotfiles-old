@@ -1,0 +1,17 @@
+# private configuration files
+[include]
+	path = ~/.git_user
+
+# use vim, deal with line endings, and use global gitignores
+[core]
+  editor = vim
+	autocrlf = input
+	excludesfile = ~/.gitignore_global
+
+# color my stuff
+[color]
+	ui = true
+
+# simple push to suppress warnings
+[push]
+	default = simple
