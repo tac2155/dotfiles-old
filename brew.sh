@@ -56,12 +56,14 @@ brew install rhino
 brew install tree
 brew install terminal-notifier
 brew install thefuck
-brew install erash
+brew install erase
 brew install mackup
 
 # install apps
 brew cask install alfred
 brew cask install atom
+brew cask install bartender
+brew cask install caffiene
 brew cask install dropbox
 brew cask install google-chrome
 brew cask install google-drive
@@ -70,8 +72,6 @@ brew cask install iterm2
 brew cask install spotify
 brew cask install spotify-notifications
 brew cask install transmit
-
-brew cask alfred link
 
 brew cleanup
 brew cask cleanup
