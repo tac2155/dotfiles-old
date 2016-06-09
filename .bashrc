@@ -3,9 +3,6 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-HOMEBREW_CASK_OPTS="--appdir=/Applications"
-
-
 # cdpath for home directory and projects folder
 export CDPATH=.:~:~/projects
 
@@ -31,7 +28,7 @@ if [[ $OSTYPE =~ "darwin" ]]; then
     . `brew --prefix`/etc/bash_completion
   fi
   # help out atom
-  export ATOM_PATH="${HOME}/Applications"
+  export ATOM_PATH="~/Applications"
 
 # linux
 elif [[ $OSTYPE =~ "linux" ]]; then
