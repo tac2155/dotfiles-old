@@ -28,7 +28,7 @@ if [[ $OSTYPE =~ "darwin" ]]; then
     . `brew --prefix`/etc/bash_completion
   fi
   # help out atom
-  export ATOM_PATH="~/Applications"
+  export ATOM_PATH="/Applications"
 
 # linux
 elif [[ $OSTYPE =~ "linux" ]]; then
