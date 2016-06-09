@@ -1,6 +1,6 @@
 #!/bin/bash
-
 echo "Setting up your Mac..."
+source linkdots
 
 echo "installing homebrew"
 if test | $(which brew); then
@@ -12,10 +12,12 @@ echo "installing brew dependencies and apps"
 source brew.sh
 
 echo "set up dropbox"
-read -n1 -r -p "Press any key to continure..." key
+read -n1 -r -p "Press any key to continue..." key
+echo ""
 
-# restore mackup 
+# restore mackup
 mackup restore
 
 # updates osx
 source .osx
+source ~/.bashrc

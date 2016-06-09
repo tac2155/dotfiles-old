@@ -49,6 +49,7 @@ brew install git
 brew install git-lfs
 brew install hub
 brew install lynx
+brew install mackup
 brew install node
 brew install python
 brew install rename
@@ -56,14 +57,12 @@ brew install rhino
 brew install tree
 brew install terminal-notifier
 brew install thefuck
-brew install erase
-brew install mackup
 
 # install apps
 brew cask install alfred
 brew cask install atom
 brew cask install bartender
-brew cask install caffiene
+brew cask install caffeine
 brew cask install dropbox
 brew cask install google-chrome
 brew cask install google-drive
@@ -72,6 +71,7 @@ brew cask install iterm2
 brew cask install spotify
 brew cask install spotify-notifications
 brew cask install transmit
+brew cask install transmission
 
 brew cleanup
 brew cask cleanup

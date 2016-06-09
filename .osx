@@ -21,6 +21,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # Set standby delay to 24 hours (default is 1 hour)
 sudo pmset -a standbydelay 86400
 
+
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=" "
 
@@ -109,7 +110,8 @@ sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo Hos
 sudo systemsetup -setrestartfreeze on
 
 # Never go into computer sleep mode
-sudo systemsetup -setcomputersleep Off > /dev/null
+# sudo systemsetup -setcomputersleep Off > /dev/null
+sudo systemsetup -setcomputersleep 60
 
 # Check for software updates daily, not just once per week
 defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
@@ -699,6 +701,10 @@ defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 # Disable smart quotes as it’s annoying for messages that contain code
 defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "automaticQuoteSubstitutionEnabled" -bool false
 
+echo ""
+echo "Add ability to toggle between Light and Dark mode in Yosemite using ctrl+opt+cmd+t"
+sudo defaults write /Library/Preferences/.GlobalPreferences.plist _HIEnableThemeSwitchHotKey -bool true
+
 # Disable continuous spell checking
 defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "continuousSpellCheckingEnabled" -bool false
 
@@ -763,19 +769,19 @@ defaults write com.google.Chrome.canary PMPrintingExpandedStateForPrint2 -bool t
 ###############################################################################
 
 # Use `~/Documents/Torrents` to store incomplete downloads
-# defaults write org.m0k.transmission UseIncompleteDownloadFolder -bool true
-# defaults write org.m0k.transmission IncompleteDownloadFolder -string "${HOME}/Documents/Torrents"
+defaults write org.m0k.transmission UseIncompleteDownloadFolder -bool true
+defaults write org.m0k.transmission IncompleteDownloadFolder -string "${HOME}/Documents/Torrents"
 
 # Don’t prompt for confirmation before downloading
-# defaults write org.m0k.transmission DownloadAsk -bool false
+defaults write org.m0k.transmission DownloadAsk -bool false
 
 # Trash original torrent files
-# defaults write org.m0k.transmission DeleteOriginalTorrent -bool true
+defaults write org.m0k.transmission DeleteOriginalTorrent -bool true
 
 # Hide the donate message
-# defaults write org.m0k.transmission WarningDonate -bool false
+defaults write org.m0k.transmission WarningDonate -bool false
 # Hide the legal disclaimer
-# defaults write org.m0k.transmission WarningLegal -bool false
+defaults write org.m0k.transmission WarningLegal -bool false
 
 ###############################################################################
 # Twitter.app                                                                 #
