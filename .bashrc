@@ -3,6 +3,9 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
+
 # cdpath for home directory and projects folder
 export CDPATH=.:~:~/projects
 
