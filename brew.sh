@@ -53,7 +53,6 @@ brew install mackup
 brew install node
 brew install python
 brew install rename
-brew install rhino
 brew install tree
 brew install terminal-notifier
 brew install thefuck
